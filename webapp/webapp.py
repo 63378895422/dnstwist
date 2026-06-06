@@ -27,7 +27,7 @@ import dnstwist
 
 
 PORT = int(os.environ.get('PORT', 8000))
-HOST= os.environ.get('HOST', '127.0.0.1')
+HOST = os.environ.get('HOST', '127.0.0.1')
 THREADS = int(os.environ.get('THREADS', dnstwist.THREAD_COUNT_DEFAULT))
 NAMESERVERS = os.environ.get('NAMESERVERS') or os.environ.get('NAMESERVER')
 SESSION_TTL = int(os.environ.get('SESSION_TTL', 3600))
