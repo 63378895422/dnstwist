@@ -277,7 +277,7 @@ class UrlOpener():
 			'accept-encoding': 'gzip,identity',
 			'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8'}
 		for h, v in headers.items():
-			# do not override accepted encoding - only gzip,identity is supported
+			# do not override accepted encoding - only gzip, identity is supported
 			if h.lower() != 'accept-encoding':
 				http_headers[h.lower()] = v
 		if verify:
